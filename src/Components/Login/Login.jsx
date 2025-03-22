@@ -12,33 +12,38 @@ const Login = () => {
     const verificar = (event) => {
         event.preventDefault();
         console.log("verificar");
-        console.log("Teste", usuario, senha);
+        console.log(usuario, senha);
+
+        alert ("Enviando os dados...");
     };
 
   return (
+    <>
+    <div className="Logo">
+        <img src="https://colegioprestesmaia.com.br/wp-content/uploads/2020/12/seu-logo-aqui-1.png" alt="Colegio Prestes Maia" width="150" />
+    </div>
+
+
     <div className="container">
-        <h1>Acesse o Sistema de Ponto</h1>
+        <h1>Ponto Online</h1>
         <form onSubmit={verificar}>
-            <div>
+            <div className='campo-entrada' >
             <input type="text" placeholder="Digite seu usuário" name="usuario"
             onChange={(e) => setUsuario(e.target.value)} />
             <FaUser className='icon'/>
             </div>
-
-            <div>
+            <div className='campo-entrada'>
             <input type="password" placeholder="Digite sua senha..." name="senha" 
             onChange={(e) => setSenha(e.target.value)}/>
             <FaLock className='icon'/>
             </div>
-
             <div className="lembrar-usuario">
                 <label>
                     <input type="checkbox" />
                     Lembre de mim
                 </label>
-                <a href="#"> Você Esqueceu a senha?</a>
+                <a href="#">Esqueceu a senha?</a>
             </div>
-
            <button>Entrar</button>
 
            <div className="registrar">
@@ -49,6 +54,7 @@ const Login = () => {
 
         </form>
     </div>
+</>
   )
 }
 

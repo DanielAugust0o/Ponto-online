@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    background-image: url('../src/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Logo {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+@media (max-width: 768px) {
+    .App {
+        background-size: auto;
+    }
+}
