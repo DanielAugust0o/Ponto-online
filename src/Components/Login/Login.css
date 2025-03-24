@@ -1,14 +1,15 @@
 
-
-
 .container {
-    width: 450px; 
+
+    align-items: center;
+    width: 450px;
     background-color: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.4); /* Ajuste na transparência da borda */
+    border: 2px solid rgba(255, 255, 255, 0.4);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .container h1 {
@@ -16,15 +17,13 @@
     font-size: 30px;
     color: rgb(0, 25, 251);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-
-
 }
 
 .container .campo-entrada {
-position: relative;
-width: 100%;
-height: 50px;
-margin: 30px auto;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
 }
 
 .campo-entrada input {
@@ -36,14 +35,12 @@ margin: 30px auto;
     border-radius: 40px;
     font-size: 16px;
     color: rgb(0, 0, 0);
-    padding: 10px 25px; /* Reduzi o padding vertical para melhor alinhamento */
+    padding: 10px 25px;
 }
-
 
 .campo-entrada input::placeholder {
-    color: rgba(0, 0, 0, 0.5); /* Um tom mais suave de preto */
+    color: rgba(0, 0, 0, 0.5);
 }
-
 
 .campo-entrada .icon {
     position: absolute;
@@ -54,14 +51,14 @@ margin: 30px auto;
     color: rgb(0, 0, 0);
 }
 
-.container .lembrar-usuario{
+.container .lembrar-usuario {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 
-.lembrar-usuario  label {
+.lembrar-usuario label {
     color: rgb(0, 0, 0);
 }
 
@@ -69,11 +66,13 @@ margin: 30px auto;
     margin-right: 5px;
 }
 
-.lembrar-usuario a, .container p a {
+.lembrar-usuario a,
+.container p a {
     text-decoration: none;
 }
 
-.lembrar-usuario a:hover, .container p a:hover {
+.lembrar-usuario a:hover,
+.container p a:hover {
     text-decoration: underline;
 }
 
@@ -97,5 +96,61 @@ margin: 30px auto;
     font-size: 15px;
     text-align: center;
     margin: 20px 0 10px;
+}
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .campo-entrada input {
+        font-size: 14px;
+    }
+
+    .container button {
+        font-size: 16px;
+    }
+
+    .container .registrar {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 70%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 631px) {
+    .container {
+        width: 65%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .campo-entrada input {
+        font-size: 12px;
+    }
+
+    .container button {
+        font-size: 14px;
+    }
 }

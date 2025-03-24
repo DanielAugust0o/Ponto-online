@@ -1,0 +1,30 @@
+.Mapa {
+    text-align: center;
+}
+.home-container {
+    display: flex; /* Usando flexbox para o layout lado a lado */
+    justify-content: space-between; /* Espaço entre o mapa e o formulário */
+    align-items: flex-start; /* Alinha os elementos no topo */
+    gap: 20px; /* Espaçamento entre o mapa e o formulário */
+    padding: 20px;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .form {
+    width: 300px; /* Define a largura do formulário */
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .GoogleMap {
+    width: 100%; /* Define a largura do mapa */
+    height: 400px; /* Define a altura do mapa */
+  }
+  

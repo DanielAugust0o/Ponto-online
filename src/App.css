@@ -5,22 +5,20 @@
     box-sizing: border-box;
 }
 
-.App {
-    display: flex;
-    flex-direction: column; 
+.App  {
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column; 
     height: 100vh;
     min-height: 100vh;
     background-color: #f1f1f1;
     background-image: url('../src/assets/background.jpg');
     background-size: cover;
     background-position: center;
+
   }
   
-  .Logo {
-    margin-bottom: 20px;
-  }
   
   .container {
     width: 450px;
@@ -37,3 +35,5 @@
         background-size: auto;
     }
 }
+
+
